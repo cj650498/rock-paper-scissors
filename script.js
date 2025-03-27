@@ -16,3 +16,11 @@ function getComputerChoice() {
     }
 }
 
+/*
+Function: getHumanChoice
+Algorithm:
+Prompt and return user choice (not considering invalid entries)
+*/
+function getHumanChoice() {
+    return prompt('Enter rock, paper, or scissors: ');
+}
