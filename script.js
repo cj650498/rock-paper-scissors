@@ -1,8 +1,8 @@
 /**
  * Function: getComputerChoice()
  * Algorithm:
- * 1. Create variable `randomNumber` with a random integer between 0-2
- * 2. Return string rock, paper, scissors depending on random integer
+ * Create variable `randomNumber` with a random integer between 0-2
+ * Return string rock, paper, scissors depending on random integer
  */
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
@@ -19,7 +19,7 @@ function getComputerChoice() {
 /**
  * Function: getHumanChoice()
  * Algorithm:
- * 1. Prompt and return user choice
+ * Prompt and return user choice
 */
 function getHumanChoice() {
     let choice = prompt('Enter rock, paper, or scissors: ')
@@ -64,11 +64,9 @@ function printResult(result, humanChoice, computerChoice) {
  * Else print result, increase computer score
  */
 function playRound(humanChoice, computerChoice) {
-
     const tie = -1;
     const win = 1;
     const lose = 0;
-
     if (humanChoice === computerChoice) {
         printResult(tie, humanChoice, computerChoice);
     } else
@@ -88,7 +86,7 @@ function playRound(humanChoice, computerChoice) {
 let humanScore = 0;
 let computerScore = 0;
 
-// Play game!
+// Game loop (best out of five)
 let keepGoing = true;
 let round = 1;
 while(keepGoing) {
